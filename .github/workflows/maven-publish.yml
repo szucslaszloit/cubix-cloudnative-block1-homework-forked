@@ -69,9 +69,7 @@ jobs:
        uses: actions/checkout@v3
 
      - name: Run Script
-       run: |
-         chmod +x./verify-image.sh
-         ./verify-image.sh
+       run: ./verify-image.sh
    
       
 
