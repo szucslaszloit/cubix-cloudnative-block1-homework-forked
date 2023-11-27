@@ -63,9 +63,15 @@ jobs:
     permissions:
       contents: read
       packages: write
- 
+
     steps:
-    - name: "Run Verify Script"
-      run: ./verify-image.sh
+     - name: Checkout Repository
+       uses: actions/checkout@v3
+
+     - name: Run Script
+       run: |
+         chmod +x./verify-image.sh
+         ./verify-image.sh
+   
       
 
