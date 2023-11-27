@@ -56,6 +56,6 @@ jobs:
     - name: Publish the Docker image
       run: docker push ghcr.io/szucslaszloit/cubix/1/homework/app:springboot
     - name: Verify Docker image
-      run: ./verify_image_script.sh
+      run: ./verify_image.sh
       
 
